@@ -25,3 +25,15 @@
         });
 
 })('43994d6b-66ea-49fc-71f1-31077e387150');
+
+let styles = `
+    ._pendo-badge_ { 
+  display: none !important;
+}
+`
+var styleSheet = document.createElement("style")
+styleSheet.innerText = styles
+
+if(window.location.href === "https://mob-site.netlify.app" {
+    document.head.appendChild(styleSheet)
+}
