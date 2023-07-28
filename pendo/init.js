@@ -34,6 +34,6 @@ let styles = `
 var styleSheet = document.createElement("style")
 styleSheet.innerText = styles
 
-if(window.location.href === "https://mob-site.netlify.app") {
+if(window.location.href === "https://mob-site.netlify.app/") {
     document.head.appendChild(styleSheet)
 }
