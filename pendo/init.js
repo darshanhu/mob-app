@@ -12,16 +12,29 @@
 
         pendo.initialize({
             visitor: {
-                id:           'SOFTLAND_VISITOR_KEERTHIRAJ',
-                email:        "keerthi.raj@softland.com",
-                full_name:    "Keerthi Raj"
+                id: "propertyUser-new",
+                full_name: "Darshan Hulswar",
+                pendoId: 99,
+                listProperty: ["128", "129", "130", "131", "240"],
+                numericList: [400, 500, 600, 700, 800],
+                birthDate: "1999-11-28",
+                uniqueClientId: 99294858,
+                typeTesting: true,
+                serverUrl: "https://mob-site.netlify.app/"
             },
-
+        
             account: {
-                id:           'SOFTLAND_ACCOUNT_1',
-                name:         "SOFTLAND_ACCOUNT",
-                creationDate: new Date().toISOString().slice(0, 10)
-            }
+                id: "MobSite-Latest-Account",
+                name: "MOB_SITE_ACCOUNT",
+                DAU: 99
+            },
+            events: {
+                ready: function () {
+                    console.log("Yes, now it will show the guide")
+                    window.pendo.showGuideById("ljF1w0DV486z1bp09uR0PWkpauI")
+                    console.log("No it's not showing")
+                }
+            },
         });
 
 })('43994d6b-66ea-49fc-71f1-31077e387150');
